@@ -1,7 +1,5 @@
 
 # Soon Chee Loong
-# c4soonch
-# 999295793
 # cheeloong.soon@mail.utoronto.ca 
 # CSC384 Winter 2015
 # University of Toronto 
