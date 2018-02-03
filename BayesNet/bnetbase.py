@@ -210,11 +210,6 @@ class Factor:
             # Get the unique mapping for this combination of variable values 
             # From the unique mapping, index the value of this combination of values to be the probability value given. 
             self.values[index] = t[0]
-            # BRILLIANT!!!!! THIS IS HOW YOU DO VARIABLE INDEXING FOR WHAT YOU COULDNT DO BEFORE IN THE ECE345!!!!!
-            #         Note: this somehow works magically 
-            #                If you try calculate the index with all variable's value index to be 0, your final index is 0 
-            #                If you try calculate the index with all variable's value index to be the last (variable.size()-1) 
-            #                The final index will be (size - 1) which refers to the last position of this index
                
     # Similar to addValue but it allows an easier interface to assign probability values to a list of assignments 
     def add_value_at_current_assignment(self, number): 
