@@ -419,10 +419,8 @@ def multiply_factors(Factors):
 def recursiveRestrictFactors(newFactor, factor, newScope):
     # Base case: When no more variables, which means all variables has been assigned values at this iteration 
     if len(newScope) == 0:
-        # For all variables in the factor's scope, 
-        for variable in newFactor.scope:
-            # Add to the new factor the new values 
-            newFactor.add_value_at_current_assignment(factor.get_value_at_current_assignments())
+        # Add to the new factor the new values 
+        newFactor.add_value_at_current_assignment(factor.get_value_at_current_assignments())
     else:
         # Continue going through every possible value in the variable's domain 
         for value in newScope[0].domain():
